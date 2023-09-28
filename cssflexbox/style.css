@@ -1,0 +1,86 @@
+ @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+JP:wght@700&display=swap');
+
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+
+
+
+
+
+
+ .first_child , .second_child , .third_child {
+   
+    
+    
+
+ }
+
+
+ .nav_bar {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background-color: lightpink;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+ }
+
+ .logo {
+    height: 40px;
+    width: 50px;
+    
+
+}
+
+nav {
+    
+}
+
+.logo_text {
+    font-family: jost;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.second_child {
+    width: auto;
+}
+
+.second_child a {
+    text-decoration: none;
+    font-family: jost;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+}
+
+main {
+    display: flex;
+}
+
+.icon {
+    font-size: 30px;
+    padding: 20px;
+    background-color: lightpink;
+    border-radius: 50%;
+    border: 1px solid;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}
+
+.relative {
+    height: 150px;
+    border-radius: 10px;
+    width: 150px;
+    position: relative;
+    left: 100px;
+    bottom: 1s00px;
+}

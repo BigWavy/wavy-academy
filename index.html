@@ -9,12 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap" rel="stylesheet">
+
+
+<!-- swiper cdn -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <nav>
         <div class="container nav_container">
 
-              <a href="index.html"><h4>EGATOR</h4></a>
+              <a href="index.html"> <img src="logo.png" alt="" class="logoo"></a>
               <ul class="nav_menu">
                    <li><a href="index.html">Home</a></li>
                    <li><a href="about.html">About</a></li>
@@ -224,7 +231,7 @@
                 <div class="course_info">
 
                 <h4>POSING IN PHOTOGRAPHY</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus porro illo similique repudiandae quod sed?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus porro illo similique repudiandae quod sed?p</p>
                 <a href="courses.html" class="btn btn-primary">LEARN</a>
 
                 </div>
@@ -500,12 +507,12 @@
 
     <!-- end of faqs -->
 
-    <section class="container testimonials_container">
+    <section class="container testimonials_container mySwiper">
 
         <h2>STUDENTS' TESTIMONIALS</h2>
 
-        <div>
-            <article class="testimonial">
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
 
                 <div class="avatar">
                    <img src="ava1.jpeg" alt="">
@@ -522,7 +529,7 @@
 
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
 
                 <div class="avatar">
                    <img src="ava2.jpeg" alt="">
@@ -539,7 +546,7 @@
 
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
 
                 <div class="avatar">
                    <img src="ava3.jpeg" alt="">
@@ -556,7 +563,7 @@
 
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
 
                 <div class="avatar">
                    <img src="ava4.jpeg" alt="">
@@ -579,9 +586,97 @@
 
         </div>
 
-
+       <div class="swiper-pagination"></div>
     </section>
+<!-- end of testimonials -->
 
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo"><h4>WAVY ACADEM</h4>
+                </a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ea rem corrupti.</p>
+            </div>
+
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer _3">
+                <h4>Primacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+
+
+                </ul>
+
+
+            </div>
+
+            <div class="footer_4">
+
+                <h4>Contact Us</h4>
+                
+                <div>
+                    <p>08164678126</p>
+                    <p>Wavygrapher@gmail.com</p>
+
+                </div>
+
+                <ul class="footer_socials">
+                    <li><a href="#">icon</a></li>
+                    <li><a href="#">icon</a></li>
+                    <li><a href="#">icon</a></li>
+                    <li><a href="#">icon</a></li>
+
+
+
+                </ul>
+
+
+            </div>
+
+            
+        </div>
+        <div class="footer_copyright">
+            <small>
+                Copyright &copy; wavy photography tutorials
+            </small>
+        </div>
+
+    </footer>
+
+    <!-- swiper js script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+         slidesPerView: 1,
+         spaceBetween: 30,
+         pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+         },
+         //when window width is >= 600px
+         breakpoints: {
+            600: {
+                slidesPerView: 2
+
+            }
+         }
+        });
+    </script>
+
+    <!-- javascript -->
     <script src="main.js"></script>
 </body>
 </html>
