@@ -100,7 +100,7 @@ img {
 /* NAVBAR */
 
 nav {
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(19, 19, 20);
     height: 5rem;
     width: 100vw;
     position: fixed;
@@ -110,7 +110,7 @@ nav {
 
 }
 .nav_container .logoo {
-    width: 110px;
+    width: 90px;
     margin-bottom: 10px;
     
 }
@@ -156,7 +156,7 @@ header {
     position: relative;
     top: 5rem;
     overflow: hidden;
-    height: 70vh;
+    height: 80vh;
     margin-bottom: 5rem;
 }
 
@@ -276,11 +276,18 @@ header {
 
 }
 
+
+
 .courses_container {
   display: grid;
   grid-template-columns: repeat(3 , 1fr);
   gap: 2rem;
   
+  
+}
+
+.course_image {
+    border-radius: 20px;
 }
 
 .course {
@@ -290,6 +297,22 @@ header {
     height: 800px;
     transition: all 1000ms ease;
 }
+
+.course:nth-child(1) {
+    background:  rgb(0, 84, 50);
+    color: rgb(255, 255, 255);
+}
+
+.course:nth-child(2) {
+    background: rgba(255, 85, 52, 0.945) ;
+    color: white;
+}
+
+.course:nth-child(3) {
+    background:  rgb(95, 188, 255) ;
+    color: white;
+}
+
 
 .course:hover {
     background: transparent;
@@ -307,6 +330,10 @@ header {
     font-size: 1rem;
 }
 
+.course a {
+    background: rgb(255, 255, 255);
+    color: black;
+}
 /* faqs */
 
 .faqs {
@@ -511,6 +538,24 @@ footer ul li a:hover {
         background: rgb(94, 0, 0);
     }
 
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+
+
 
     .btn-primary {
         color: black;
@@ -544,11 +589,26 @@ footer ul li a:hover {
         height: 650px;
     }
 
+    .course:nth-child(1) {
+        background: rgb(0, 102, 61);
+        color: black;
+    }
+
+    .course:nth-child(2) {
+        background: rgba(255, 85, 52, 0.945);
+        color: #000000;
+    }
+
+    .course:nth-child(3) {
+        background: rgb(95, 188, 255);
+        color: black;
+    }
+
     
 
     .course:hover {
         background: #111111;
-        border: 1px solid rgb(66, 0, 0);
+        color: white;
     }
 
     h2 {
@@ -560,15 +620,269 @@ footer ul li a:hover {
     }
 
     .courses {
-        background: rgb(247, 151, 16);
+        background: #0b0b0b;
+        margin-top: 0;
+    }
+
+    .courses h2 {
+        color: #d8d8d8;
     }
 
     .course {
-        background: blue;
-        color: orange;
-        height: 30rem;
+        background: #FFA586;
+        color: #384358;
+        height: 45rem;
+        border-radius: 20px;
+    }
+
+    .courses_container {
+        grid-template-columns: 1fr 1fr;
     }
     
+/* NAV BARRRRRR */
+
+nav button {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    color: #bbbbbb;
+    cursor: pointer;
+
+    
+}
+
+nav button#close-menu-button {
+    display: none;
+}
+
+.nav_menu {
+    position: fixed;
+    top: 5rem;
+    right: 5%;
+    height: fit-content;
+    width: 18rem;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+    }
+
+.nav_menu a:hover {
+    color: rgb(137, 0, 0);
+
+}
+
+.nav_menu li {
+    width: 100%;
+    height: 5.8rem;
+    animation: animateNavItems 300ms linear forwards;
+    transform-origin: top right;
+    opacity: 0;
+}
+
+.nav_menu li:nth-child(2) {
+    animation-delay: 200ms;
+}
+
+.nav_menu li:nth-child(3) {
+    animation-delay: 400ms;
+}
+
+.nav_menu li:nth-child(4) {
+    animation-delay: 600ms;
+}
+
+@keyframes animateNavItems {
+    0% {
+        transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+
+    }
+
+    100% {
+        transform: rotateZ(0) rotateX(0) scale(1);
+        opacity: 1;
+    }
+
+}
+
+.nav_menu li a {
+    background: rgb(19, 19, 20);
+    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    transition: 1300ms;
+
+}
+
+.nav_menu li a:hover {
+    background: #384358;
+}
+
+.nav_container #close-menu-button {
+    color:  rgb(168, 0, 0);
+}
+
+/* header section */
+
+header {
+    height: 50vh;
+    margin-bottom: 4rem;
+}
+
+.header_container {
+    gap: 0;
+    padding-bottom: 3rem;
+    height: 100%;
+
+}
+
+.left_header {
+    
+}
+
+
+/* categories section */
+
+.categories {
+    height: auto;
+}
+
+.categories_container{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+}
+
+.categories_left {
+    margin-right: 0;
+
+}
+
+/* faqs */
+
+.faqs_container {
+    grid-template-columns: 1fr;
+
+}
+
+.faq {
+    padding: 1.5rem;
+}
+
+/* footer */
+
+.footer_container {
+    grid-template-columns: 1fr 1fr;
+}
+
+.course_image {
+    border-radius: 20px;
+}
+
+nav {
+    top: 0;
+    background-color: rgb(19, 19, 20);
+    height: 5rem;
+    width: 100vw;
+    position: fixed;
+    z-index: 11;
+    margin-bottom: 50px;
+}
+}
+
+/* media queries phones */
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 94%;
+    }
+/* nav */
+    .nav_menu {
+        right: 3%;
+    }
+
+    /* header */
+    header {
+        height: 100vh;
+    }
+
+    .header_container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top:2rem;
+    }
+
+    .left_header p {
+        margin-bottom: 1.3rem;
+    }
+
+    /* categories */
+
+    .categories_right {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .category {
+        padding: 1rem;
+        border-radius: 1rem;
+
+    }
+
+    .category_icon {
+        margin-top: 4px;
+        display: inline-block;
+
+    }
+
+    /* popular courses */
+
+    .courses_container {
+        grid-template-columns: 1fr;
+
+    }
+
+    /* testimonials */
+    .testimonial_body {
+        padding: 1.2rem;
+    }
+
+    /* footer */
+
+    .footer_container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer_1 P {
+        margin: 1rem auto;
+    }
+
+
+    .footer_socials {
+        justify-content: center ;
+    }
+     
+}
+
+
+@media screen and (max-width: 360px) {
+
+.header_container {
+    height: 80vh;
+    font-size: small;
+
+}
+
+.header_container h1 {
+    font-size: x-large;
+}
+
+.left_header {
+    padding-bottom: 10px;
+}
 
 
 }
