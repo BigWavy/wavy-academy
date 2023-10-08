@@ -535,7 +535,7 @@ footer ul li a:hover {
 
 @media screen and (max-width: 1024px) {
     body {
-        background: rgb(94, 0, 0);
+        background: rgb(32, 32, 32);
     }
 
     h1 {
@@ -797,6 +797,10 @@ nav {
     .container {
         width: 94%;
     }
+
+    body{
+        background: #111111;
+    }
 /* nav */
     .nav_menu {
         right: 3%;
@@ -873,7 +877,11 @@ nav {
 .header_container {
     height: 80vh;
     font-size: small;
+  
 
+}
+body{
+    background: rgb(30, 30, 30);
 }
 
 .header_container h1 {
