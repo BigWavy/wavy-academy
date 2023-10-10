@@ -134,6 +134,14 @@ nav button {
     display: none;
 }
 
+.nav_container h5{
+    display: flex;
+    flex-direction: row;
+    padding-right: 400px;
+    font-weight: 500;
+    color: red;
+}
+
 .nav_menu {
     display: flex;
     align-items: center;
@@ -149,6 +157,8 @@ nav button {
 .nav_menu a:hover {
     color:  #750000 ;
 }
+
+
 
 /* HEADER SECTION */
 
