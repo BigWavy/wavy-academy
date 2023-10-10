@@ -738,6 +738,7 @@ nav button#close-menu-button {
 header {
     height: 50vh;
     margin-bottom: 4rem;
+    background: rgb(92, 0, 0);
 }
 
 .header_container {
@@ -819,6 +820,7 @@ nav {
     /* header */
     header {
         height: 100vh;
+        background: rgb(92, 0, 0);
     }
 
     .header_container {
